@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
     <title>Kancelaria Adwokacka</title>
 
-    <script src='script/navbar.js' defer></script>
-    <script src='script/smooth_scroll.js' defer></script>
-    <script src='script/contact_form.js' defer></script>
+    <!-- Metadane -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Dostosowanie strony do urządzeń mobilnych -->
+    <meta charset='utf-8'> <!-- Kodowanie polskich znaków -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'> <!-- Wymuś renderowanie dla najnowszej wersji przeglądarki IE -->
+    
+    <!-- Lokalne skrypty JavaScript -->
+    <script src='script/navbar.js' defer></script> <!-- Skrypty obsługujące navbar -->
+    <script src='script/smooth_scroll.js' defer></script> <!-- Skrypty obsługujący płynne przewijanie strony -->
+    <script src='script/contact_form.js' defer></script> <!-- Skrypty obsługujące formularz kontaktowy -->
+    <script> 
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.location.hash) {
+                history.replaceState(null, null, ' ');
+            }
+        });
+    </script> <!-- Skrypt odpowiedzialny za usuwanie odsyłaczy z URL -->
+
+    <!-- Lokalne arkusze stylu -->
     <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
 
-
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Zewnętrzne arkusze stylu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> <!-- Czcionka Google Font -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Biblioteka obsługująca animacje przy przewijaniu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteka ikon -->
     
 </head>
+
+<!-- Body strony -->
 <body>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar"> 
         <div class="navbar-brand">Kancelaria Adwokacka</div>
         <div class="navbar-toggle" id="navbar-toggle">
             &#9776;
@@ -33,6 +48,9 @@
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </nav>
+    <!-- Koniec Navbar -->
+
+    <!-- Sekcja0 - pełnoekranowy obraz z motto i nazwą z efektem parallaxy -->
     <div class="fullsize_image_main">
         <div class="overlay">
             <h1><b>Kancelaria Adwokacka</b> <br> <i>Justyna Kowalska</i></h1>
@@ -41,19 +59,18 @@
             </div>
         </div>
     </div>
+    <!-- Koniec Sekcja0 -->
+
+    <!-- Sekcja1 - O mnie -->
     <div class="about" id="o-mnie">
-        <h2 style="color:#d5a848;" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">O mnie</h2>
+        <h2 data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine">O mnie</h2>
         <h1 data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-out-quart" data-aos-duration="1000">Justyna Kowalska</h1>
         <div class="about-content">
             <div class="about-text" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-easing="linear" data-aos-delay="300">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend dapibus arcu, et tincidunt dolor lacinia nec. Phasellus id dui euismod, eleifend dui id, pulvinar nunc. Vivamus eget mi sed leo tempor facilisis nec ac lorem. Morbi vitae nisi sit amet sem maximus vehicula. Phasellus ante purus, mattis in lectus quis, sodales tincidunt tortor. Quisque at nunc laoreet, pulvinar velit a, aliquam felis. Phasellus cursus tincidunt imperdiet. Maecenas venenatis elementum leo at venenatis. Aenean lobortis mollis lorem.
-
-                    Nulla hendrerit neque nec eros dictum mollis. Fusce auctor accumsan pulvinar. Morbi vel sodales sapien. Nulla scelerisque turpis metus, eu luctus est eleifend a. Nulla iaculis, nunc eget commodo porta, justo quam faucibus ipsum, ut accumsan justo orci rutrum augue. Maecenas a felis pellentesque, condimentum ipsum non, scelerisque enim. Sed iaculis, eros pharetra congue tincidunt, ex ante dignissim elit, eu facilisis lacus tellus a lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sodales cursus pellentesque. Quisque malesuada enim et massa hendrerit, quis blandit nibh tincidunt. Quisque sed diam sagittis, pharetra libero sit amet, rutrum enim. Proin accumsan justo tortor, dapibus aliquet neque dictum sed. Duis sit amet quam vitae neque suscipit aliquam.
-                    
-                    Praesent rhoncus augue nec ante hendrerit, et varius metus dignissim. Pellentesque imperdiet est ac efficitur tincidunt. Phasellus velit metus, egestas ac diam nec, blandit tristique erat. Phasellus eu sollicitudin magna. Mauris tempor iaculis nibh eget luctus. Vivamus non cursus ante. Donec ac eros sed mi viverra scelerisque.
-                    
-                    Pellentesque eu eros enim. Sed vel tempor quam. Etiam ut ligula pellentesque odio fermentum malesuada. Proin dignissim diam sit amet dolor molestie, ac gravida erat sagittis. Sed sed mi a justo ultrices hendrerit tempus a justo. Nunc pharetra vehicula arcu in commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ac arcu eu ex blandit iaculis. Curabitur ac molestie mi. Suspendisse non eleifend risus. Donec vel iaculis nunc. Maecenas suscipit, dolor quis faucibus vulputate, purus lectus posuere nibh, eget accumsan elit enim a neque.
-                    
+                    Nulla hendrerit neque nec eros dictum mollis. Fusce auctor accumsan pulvinar. Morbi vel sodales sapien. Nulla scelerisque turpis metus, eu luctus est eleifend a. Nulla iaculis, nunc eget commodo porta, justo quam faucibus ipsum, ut accumsan justo orci rutrum augue. Maecenas a felis pellentesque, condimentum ipsum non, scelerisque enim. Sed iaculis, eros pharetra congue tincidunt, ex ante dignissim elit, eu facilisis lacus tellus a lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sodales cursus pellentesque. Quisque malesuada enim et massa hendrerit, quis blandit nibh tincidunt. Quisque sed diam sagittis, pharetra libero sit amet, rutrum enim. Proin accumsan justo tortor, dapibus aliquet neque dictum sed. Duis sit amet quam vitae neque suscipit iquam.                    
+                    Praesent rhoncus augue nec ante hendrerit, et varius metus dignissim. Pellentesque imperdiet est ac efficitur tincidunt. Phasellus velit metus, egestas ac diam nec, blandit tristique erat. Phasellus eu sollicitudin magna. Mauris tempor iaculis nibh eget luctus. Vivamus non cursus ante. Donec ac eros sed mi viverra scelerisque.                    
+                    Pellentesque eu eros enim. Sed vel tempor quam. Etiam ut ligula pellentesque odio fermentum malesuada. Proin dignissim diam sit amet dolor molestie, ac gravida erat sagittis. Sed sed mi a justo ultrices hendrerit tempus a justo. Nunc pharetra vehicula arcu in commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ac arcu eu ex blandit iaculis. Curabitur ac molestie mi. Suspendisse non eleifend risus. Donec vel iaculis nunc. Maecenas suscipit, dolor quis faucibus vulputate, purus lectus posuere nibh, eget accumsan elit enim a neque.                    
                     Praesent luctus ultrices tortor, ut dapibus neque tincidunt eu. Duis sed lacus at elit commodo sodales. Duis quis ornare purus. Vivamus interdum sollicitudin tellus eu ultricies. Duis in tincidunt mi, ut tristique nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur faucibus tincidunt nisl vel tristique. Ut ac egestas lectus, eget dignissim magna. Integer sit amet lectus ac sapien egestas facilisis at finibus eros. Praesent imperdiet non neque lacinia iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
             </div>
             <div class="about-image" data-aos="zoom-out" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="500">
@@ -61,8 +78,12 @@
             </div>
         </div>
     </div>
+    <!-- Koniec Sekcja1 -->
+
+    <!-- Sekcja2 - Dekoracja z efektem parallaxy -->
     <div class="fullsize_image_two"></div>
 
+    <!--Sekcja - Kontakt -->
     <div id="kontakt">
         <h1>Kontakt</h1>
         <!-- <div id="contact-info">

@@ -2,9 +2,18 @@
 @import url('content.css');
 @import url('contact_form.css');
 
+/* Schemat kolorów, zmiana kolorów tutaj, zmieni wszystkie kolory na stronie! */
+:root {
+    --primary-color: #1A1A1A;
+    --seconadry-color: #FFFFFF;
+    --text-light-color: #FFFFFF;
+    --text-dark-color: #1A1A1A;
+    --accent-color: #d5a848;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
 /* Ogólne style dla całego projektu */
 body, html {
-    background-color: #1A1A1A;; /* Tło główne */
+    background-color: var(--primary-color); /* Tło główne */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -14,7 +23,7 @@ body, html {
 }
 
 h1, h2 {
-    color: #1A1A1A; /* Kolor nagłówka */
+    color: var(--primary-color); /* Kolor nagłówka */
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -29,11 +38,8 @@ section {
 }
 
 h1 {
-    color: #1A1A1A; /* Kolor nagłówka */
+    color: var(--primary-color); /* Kolor nagłówka */
 }
 
-p {
-    color: #4D4D4D; /* Kolor tekstu */
-}
 
 
