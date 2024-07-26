@@ -89,7 +89,7 @@
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .about-content {
         flex-direction: column;
     }
