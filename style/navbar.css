@@ -13,7 +13,7 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu głębi */
     box-sizing: border-box;
-    transition: background-color, padding 0.3s; /* Płynne przejście dla zmiany koloru tła */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Płynne przejście dla zmiany koloru tła */
 }
 
 /* Pełne tło po przewinięciu */
@@ -22,16 +22,22 @@
     padding: 20px 40px;
 }
 
+/* Pełne tło podczas otwartego menu */
+.navbar.menu-open {
+    background-color: #1A1A1A; /* Pełne tło */
+}
+
 /* Pozostałe style navbaru */
 .navbar-brand {
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     transition: 0.3s;
-    color: #d5a848;
 }
+
 .navbar-brand:hover {
-    font-weight: 700;
+    font-weight: 500;
+    color: #A37E2C;
 }
 
 .navbar-menu {
@@ -39,51 +45,21 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    opacity: 0; /* Menu jest ukryte domyślnie */
+    visibility: hidden; /* Menu jest ukryte domyślnie */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Płynne przejście */
+    background-color: #1A1A1A; /* Kolor tła menu */
 }
 
-.navbar-menu li {
-    margin-left: 20px;
+.navbar-menu.active {
+    opacity: 1; /* Menu jest widoczne */
+    visibility: visible; /* Menu jest widoczne */
 }
 
-.navbar-menu a {
-    color: #FFFFFF; /* Kolor tekstu linków navbaru */
-    text-decoration: none;
-    font-weight: 200;
-    transition: 0.3s;
-}
-.navbar a:hover {
-    font-weight: 500;
-    color: #d5a848
-}
-
+/* Styl dla przycisku hamburgerowego */
 .navbar-toggle {
-    display: none;
+    display: block;
     font-size: 1.5em;
     cursor: pointer;
-}
-
-@media (max-width: 480px) {
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #1A1A1A;
-        opacity: 0.99;
-    }
-
-    .navbar-menu.active {
-        display: flex;
-    }
-
-    .navbar-menu li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
 }
