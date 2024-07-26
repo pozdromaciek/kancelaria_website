@@ -64,7 +64,7 @@
     scroll-margin-top: 60px;
 }
 .about h1 {
-    color: var(--text-light-color);
+    color: var(--text-light-color)!important;
     font-size: 5em;
 }
 .about h2 {
