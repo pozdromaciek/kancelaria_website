@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu głębi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Opcjonalny cień dla efektu głębi */
     box-sizing: border-box;
     transition: 0.3s; /* Płynne przejście dla zmiany koloru tła */
 }
