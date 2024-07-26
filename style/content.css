@@ -1,0 +1,112 @@
+.fullsize_image_main {
+    background-image: url("../img/test_back.jpg");
+    background-color: rgba(26, 26, 26, 0.7);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; /* Kolor tekstu */
+}
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px; /* Odległość od dołu sekcji */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Rozmiar ikony */
+    color: white; /* Kolor ikony */
+    transition: 0.4s;
+}
+.scroll-indicator:hover {
+    opacity: 0.8;
+    font-size: 50px;
+}
+.scroll-indicator a {
+        color: #FFFFFF; /* Kolor tekstu linków navbaru */
+        text-decoration: none;
+}
+.overlay {  
+    padding: 20px;
+    border-radius: 10px;
+}
+.overlay h1{
+    color: #FFFFFF;
+    opacity: 100%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.about {
+    width: 100%;
+    padding: 5vh 8vw;
+    box-sizing: border-box;
+    scroll-margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 8vw;
+    box-sizing: border-box;
+    scroll-margin-top: 60px;
+}
+.about h1 {
+    color: #FFFFFF;
+    font-size: 5em;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Odstęp między tekstem a obrazem */
+}
+.about-content p {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%; /* Dopasowanie rozmiaru zdjęcia w przypadku małych ekranów */
+    }
+}
+
+
+
+
+.footer {
+    width: 100%;
+    height: 10vh;
+}
