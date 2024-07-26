@@ -89,6 +89,55 @@
     height: auto;
 }
 
+
+/* content.css */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d5a848; /* Kolor tekstu etykiety */
+    font-family: "Roboto Slab", serif;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1A1A1A;
+    border: 1px solid #d5a848;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #d5a848;
+    font-family: "Roboto Slab", serif;
+}
+
+form button {
+    background-color: #d5a848; /* Kolor tła przycisku */
+    color: #1A1A1A; /* Kolor tekstu przycisku */
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Roboto Slab", serif;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #333333; /* Kolor tła przycisku po najechaniu */
+    color: #d5a848;
+}
+
+
 @media (max-width: 760px) {
     .about-content {
         flex-direction: column;

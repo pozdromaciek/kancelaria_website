@@ -8,6 +8,8 @@ body, html {
     margin: 0;
     width: 100%;
     font-family: "Roboto Slab", serif;
+    min-width: 400px; /* Minimalna szerokość strony */
+    overflow-x: hidden;
 }
 
 h1, h2 {
