@@ -15,10 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleMenu() {
         navbarMenu.classList.toggle('active');
+        // Dodaj klasę do navbaru, gdy menu jest otwarte
+        navbar.classList.toggle('menu-open');
     }
 
     function closeMenu() {
         navbarMenu.classList.remove('active');
+        // Usuń klasę, gdy menu jest zamknięte
+        navbar.classList.remove('menu-open');
     }
 
     function scrollToTop() {
