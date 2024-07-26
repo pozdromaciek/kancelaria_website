@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbarToggle = document.getElementById('navbar-toggle');
     const navbarMenu = document.getElementById('navbar-menu');
     const scrollThreshold = 50; // Po jakiej wartości przewinięcia zmienić tło
-    const navbarBrand = document.querySelector('.navbar-brand');
 
     function onScroll() {
         if (window.scrollY > scrollThreshold) {
@@ -15,28 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleMenu() {
         navbarMenu.classList.toggle('active');
-        // Dodaj klasę do navbaru, gdy menu jest otwarte
-        navbar.classList.toggle('menu-open');
+        // Dodaj klasę scrolled, jeśli menu jest otwarte, lub usuń, jeśli zamknięte
+        navbar.classList.toggle('scrolled', navbarMenu.classList.contains('active'));
     }
 
     function closeMenu() {
         navbarMenu.classList.remove('active');
-        // Usuń klasę, gdy menu jest zamknięte
-        navbar.classList.remove('menu-open');
+        // Usuń klasę scrolled, gdy menu jest zamknięte
+        navbar.classList.remove('scrolled');
     }
 
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
+    // Nasłuchujemy na przewijanie strony
     window.addEventListener('scroll', onScroll);
-    navbarToggle.addEventListener('click', toggleMenu);
-    onScroll();
 
-    // Dodaj nasłuchiwacz dla linków w menu
+    // Nasłuchujemy na kliknięcie w przycisk hamburgera
+    navbarToggle.addEventListener('click', toggleMenu);
+
+    // Nasłuchujemy na kliknięcia w linki w menu
     document.querySelectorAll('.navbar-menu a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -53,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Dodaj nasłuchiwacz dla .navbar-brand
-    if (navbarBrand) {
-        navbarBrand.addEventListener('click', scrollToTop);
-    }
+    // Wywołujemy funkcję onScroll na załadowanie strony, aby ustawić początkowy stan
+    onScroll();
 });
