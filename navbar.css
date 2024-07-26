@@ -1,0 +1,89 @@
+/* Półprzezroczysty tło dla navbaru */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.5); /* Półprzezroczyste tło */
+    color: #FFFFFF; /* Kolor tekstu navbaru */
+    padding: 40px 80px;
+    z-index: 1000; /* Wysoki z-index, aby navbar był na wierzchu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu głębi */
+    box-sizing: border-box;
+    transition: background-color, padding 0.3s; /* Płynne przejście dla zmiany koloru tła */
+}
+
+/* Pełne tło po przewinięciu */
+.navbar.scrolled {
+    background-color: #1A1A1A; /* Pełne tło */
+    padding: 20px 40px;
+}
+
+/* Pozostałe style navbaru */
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #d5a848;
+}
+.navbar-brand:hover {
+    font-weight: 700;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: #FFFFFF; /* Kolor tekstu linków navbaru */
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    font-weight: 500;
+    color: #d5a848
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1A1A1A;
+        opacity: 0.99;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
