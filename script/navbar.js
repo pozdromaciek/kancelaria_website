@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleMenu() {
         navbarMenu.classList.toggle('active');
-        navbar.classList.toggle('scrolled', navbarMenu.classList.contains('active'));
     }
 
     function scrollToTop() {
@@ -23,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
             top: 0,
             behavior: 'smooth'
         });
+    }
+
+    function closeMenu() {
+        navbarMenu.classList.remove('active');
     }
 
     window.addEventListener('scroll', onScroll);
@@ -40,11 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     top: targetElement.offsetTop - navbar.offsetHeight,
                     behavior: 'smooth'
                 });
+                if (navbarMenu.classList.contains('active')) {
+                    closeMenu();
+                }
             }
         });
     });
 
-    // Dodaj nasłuchiwacz zdarzeń dla .navbar-brand
     if (navbarBrand) {
         navbarBrand.addEventListener('click', scrollToTop);
     }
