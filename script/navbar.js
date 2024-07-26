@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarMenu.classList.toggle('active');
     }
 
+    function closeMenu() {
+        navbarMenu.classList.remove('active');
+    }
+
     function scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -24,15 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function closeMenu() {
-        navbarMenu.classList.remove('active');
-    }
-
     window.addEventListener('scroll', onScroll);
     navbarToggle.addEventListener('click', toggleMenu);
     onScroll();
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Dodaj nasłuchiwacz dla linków w menu
+    document.querySelectorAll('.navbar-menu a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
@@ -43,13 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     top: targetElement.offsetTop - navbar.offsetHeight,
                     behavior: 'smooth'
                 });
-                if (navbarMenu.classList.contains('active')) {
-                    closeMenu();
-                }
+                closeMenu(); // Zamyka menu po kliknięciu w link
             }
         });
     });
 
+    // Dodaj nasłuchiwacz dla .navbar-brand
     if (navbarBrand) {
         navbarBrand.addEventListener('click', scrollToTop);
     }
