@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #FFFFFF; /* Kolor tekstu */
+    color: var(--text-light-color); /* Kolor tekstu */
 }
 .fullsize_image_main{
     background-image: url("../img/back1.jpg");
