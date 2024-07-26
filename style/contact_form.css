@@ -13,7 +13,7 @@ form {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #d5a848; /* Kolor tekstu etykiety */
+    color: var(--accent-color); /* Kolor tekstu etykiety */
     font-family: "Roboto Slab", serif;
 }
 
@@ -21,17 +21,17 @@ form {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    background-color: #1A1A1A;
-    border: 1px solid #d5a848;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
     box-sizing: border-box;
     font-size: 16px;
-    color: #d5a848;
+    color: var(--accent-color);
     font-family: "Roboto Slab", serif;
 }
 
 form button {
-    background-color: #d5a848; /* Kolor tła przycisku */
-    color: #1A1A1A; /* Kolor tekstu przycisku */
+    background-color: var(--accent-color); /* Kolor tła przycisku */
+    color: var(--primary-color); /* Kolor tekstu przycisku */
     padding: 10px 20px;
     border: none;
     font-size: 16px;
@@ -41,8 +41,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #333333; /* Kolor tła przycisku po najechaniu */
-    color: #d5a848;
+    background-color: var(--primary-color); /* Kolor tła przycisku po najechaniu */
+    color: var(--accent-color);
+    opacity: 0.9;
 }
 
 

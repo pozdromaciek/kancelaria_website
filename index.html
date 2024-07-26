@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html class="light">
 <head>
     
     <title>Kancelaria Adwokacka</title>
 
     <!-- Metadane -->
-    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Dostosowanie strony do urządzeń mobilnych -->
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'> <!-- Dostosowanie strony do urządzeń mobilnych -->
     <meta charset='utf-8'> <!-- Kodowanie polskich znaków -->
+    <meta name="author" content="Maciej Dubiel"> <!-- Autor strony internetowej -->
     <meta http-equiv='X-UA-Compatible' content='IE=edge'> <!-- Wymuś renderowanie dla najnowszej wersji przeglądarki IE -->
+    <meta name="description" content="Kancelaria Adwokacka Justyna Kowalska [miasto], porady prawne, sprawy karne i cywilne, doradztwo prawne"> <!-- Opis strony -->
+    <meta name="keywords" content="kancelaria adwokacka, adwokat, prawnik, porady prawne, kancelaria prawna, adwokat [miasto], kancelaria adwokacka prawo cywilne, adwokat rozwodowy [miasto], pomoc prawna, obsługa prawna firm"> <!-- Słowa kluczowe do wyszukiwarek -->
+    <!-- Metadane dla Facebooka i Instagrama -->
+    <meta property="og:title" content="Kancelaria Adwokacka Justyna Kowalska">
+    <meta property="og:description" content="Kancelaria Adwokacka Justyna Kowalska [miasto], porady prawne, sprawy karne i cywilne, doradztwo prawne">
+    <meta property="og:image" content="URL do obrazka">
+    <meta property="og:url" content="[URL]">
+    <!-- Metadane dla Twittera -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kancelaria Adwokacka Justyna Kowalska">
+    <meta name="twitter:description" content="Kancelaria Adwokacka Justyna Kowalska [miasto], porady prawne, sprawy karne i cywilne, doradztwo prawne">
+    <meta name="twitter:image" content="URL do obrazka">
+    <meta name="robots" content="index, follow"> <!-- Zewolenie na śledzenie strony przez wyszukiwarki -->
+    <meta name="theme-color" content="#1A1A1A" /> <!-- Wymuszenie koloru okna przeglądarki -->
+
+
+
     
     <!-- Lokalne skrypty JavaScript -->
     <script src='script/navbar.js' defer></script> <!-- Skrypty obsługujące navbar -->
@@ -23,6 +41,7 @@
 
     <!-- Lokalne arkusze stylu -->
     <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"> <!-- Ikona strony -->
 
     <!-- Zewnętrzne arkusze stylu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +93,7 @@
                     Praesent luctus ultrices tortor, ut dapibus neque tincidunt eu. Duis sed lacus at elit commodo sodales. Duis quis ornare purus. Vivamus interdum sollicitudin tellus eu ultricies. Duis in tincidunt mi, ut tristique nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur faucibus tincidunt nisl vel tristique. Ut ac egestas lectus, eget dignissim magna. Integer sit amet lectus ac sapien egestas facilisis at finibus eros. Praesent imperdiet non neque lacinia iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
             </div>
             <div class="about-image" data-aos="zoom-out" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="500">
-                <img src="img/me.jpg" alt="Opis zdjęcia">
+                <img src="img/me.jpg" alt="Zdjęcie portretowe, reprezentujące osobę adwokata">
             </div>
         </div>
     </div>
@@ -84,8 +103,9 @@
     <div class="fullsize_image_two"></div>
 
     <!--Sekcja - Kontakt -->
-    <div id="kontakt">
-        <h1>Kontakt</h1>
+    <div class="contact" id="kontakt">
+        <h2>Kontakt</h2>
+        <h1>Skontaktuj się z nami</h1>
         <!-- <div id="contact-info">
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>

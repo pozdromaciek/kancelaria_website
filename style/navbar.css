@@ -4,21 +4,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(26, 26, 26, 0.5); /* Półprzezroczyste tło */
+    background-color: var(--primary-transparent-color); /* Półprzezroczyste tło */
     color: #FFFFFF; /* Kolor tekstu navbaru */
     padding: 40px 80px;
     z-index: 1000; /* Wysoki z-index, aby navbar był na wierzchu */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Opcjonalny cień dla efektu głębi */
+    box-shadow: 0 2px 4px var(--shadow-color); /* Opcjonalny cień dla efektu głębi */
     box-sizing: border-box;
     transition: 0.3s; /* Płynne przejście dla zmiany koloru tła */
 }
 
 /* Pełne tło po przewinięciu */
 .navbar.scrolled {
-    background-color: #1A1A1A; /* Pełne tło */
+    background-color: var(--primary-color); /* Pełne tło */
     padding: 20px 40px;
 }
 
@@ -28,7 +28,7 @@
     font-weight: 400;
     cursor: pointer;
     transition: 0.3s;
-    color: #d5a848;
+    color: var(--accent-color);
 }
 .navbar-brand:hover {
     font-weight: 700;
@@ -46,14 +46,14 @@
 }
 
 .navbar-menu a {
-    color: #FFFFFF; /* Kolor tekstu linków navbaru */
+    color: var(--text-light-color); /* Kolor tekstu linków navbaru */
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 300;
     transition: 0.3s;
 }
 .navbar a:hover {
     font-weight: 500;
-    color: #d5a848
+    color: var(--accent-color)
 }
 
 .navbar-toggle {
@@ -73,7 +73,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #1A1A1A;
+        background-color: var(--primary-color);
         opacity: 0.99;
     }
 
