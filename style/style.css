@@ -4,7 +4,7 @@
 
 /* Schemat kolorów, zmiana kolorów tutaj, zmieni wszystkie kolory na stronie! */
 /* Przewaga ciemnego, biały tekst */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #1A1A1A;
         --primary-transparent-color: rgba(26, 26, 26, 0.5);
@@ -18,8 +18,8 @@
     }
 }
 /* Przewaga jasnego, czarny tekst */
-@media (prefers-color-scheme: light) {
-        :root.light {
+/* @media (prefers-color-scheme: light) {
+        :root {
         --primary-color: #FFFFFF;
         --primary-transparent-color: rgba(255, 255, 255, 0.9);
         --background-transparent-color: rgba(255, 255, 255, 0.7);
@@ -30,7 +30,18 @@
         --shadow-color: rgba(0, 0, 0, 0.3);
         --blend-mode: lighten;
     }
-} 
+} */ 
+:root {
+    --primary-color: #FFFFFF;
+    --primary-transparent-color: rgba(255, 255, 255, 0.9);
+    --background-transparent-color: rgba(255, 255, 255, 0.7);
+    --seconadry-color: #1A1A1A;
+    --text-light-color: #1A1A1A;
+    --text-dark-color:  #FFFFFF;
+    --accent-color: #d5a848;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --blend-mode: lighten;   
+}
 /* Ogólne style dla całego projektu */
 body, html {
     background-color: var(--primary-color); /* Tło główne */
