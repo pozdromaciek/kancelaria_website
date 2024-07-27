@@ -65,7 +65,7 @@
 }
 .about h1, .contact h1, .about-office h1 {
     color: var(--text-light-color);
-    font-size: 10vh;
+    font-size: 8vh;
 }
 .about h2, .contact h2, .about-office h2 {
     color: var(--accent-color);
