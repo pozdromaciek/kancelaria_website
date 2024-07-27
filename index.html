@@ -31,13 +31,25 @@
     <script src='script/navbar.js' defer></script> <!-- Skrypty obsługujące navbar -->
     <script src='script/smooth_scroll.js' defer></script> <!-- Skrypty obsługujący płynne przewijanie strony -->
     <script src='script/contact_form.js' defer></script> <!-- Skrypty obsługujące formularz kontaktowy -->
-    <script> 
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Przewiń stronę na górę
+            window.scrollTo(0, 0); 
+            // Usuń hash z URL
             if (window.location.hash) {
                 history.replaceState(null, null, ' ');
             }
+    
+
         });
-    </script> <!-- Skrypt odpowiedzialny za usuwanie odsyłaczy z URL -->
+    </script> Skrypt odpowiedzialny za usuwanie odsyłaczy z URL -->
+    <script>
+        window.onload = function () {
+            // Przewiń stronę na górę
+            console.log("Scrolling to top...");
+            window.scrollTo(0, 0);
+        };
+    </script>
 
     <!-- Lokalne arkusze stylu -->
     <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
@@ -205,5 +217,6 @@
     <script>
       AOS.init();
     </script>
+
 </body>
 </html>

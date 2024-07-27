@@ -51,6 +51,7 @@ body, html {
     font-family: "Roboto Slab", serif;
     min-width: 400px; /* Minimalna szerokość strony */
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1, h2 {
