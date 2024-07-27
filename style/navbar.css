@@ -48,7 +48,7 @@
 .navbar-menu a {
     color: var(--text-light-color); /* Kolor tekstu linków navbaru */
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     transition: 0.3s;
 }
 .navbar a:hover {

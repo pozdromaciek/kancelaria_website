@@ -52,22 +52,21 @@
     opacity: 0.9;
 }
 
-.about, .contact {
+.about, .contact, .about-office {
     width: 100%;
     padding: 5vh 8vw;
     box-sizing: border-box;
     scroll-margin-top: 60px;
-
     flex-direction: column;
     padding: 5vh 8vw;
     box-sizing: border-box;
     scroll-margin-top: 60px;
 }
-.about h1, .contact h1 {
+.about h1, .contact h1, .about-office h1 {
     color: var(--text-light-color);
-    font-size: 5em;
+    font-size: 10vh;
 }
-.about h2, .contact h2 {
+.about h2, .contact h2, .about-office h2 {
     color: var(--accent-color);
 }
 .about-content {
@@ -103,8 +102,107 @@
 
 
 
+.halfsize-image {
+    background-image: url("../img/back1.jpg");
+    background-color: var(--background-transparent-color);
+    background-blend-mode: var(--blend-mode);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light-color); /* Kolor tekstu */
+}
 
 .footer {
-    width: 100%;
-    height: 10vh;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap; /* Pozwala na zawijanie wierszy */
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px; /* Minimalna szerokość, aby sekcje nie były zbyt wąskie */
+}
+
+.footer-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 10px 0;
+}
+
+.footer-left ul li a {
+    color: #d5a848;
+    text-decoration: none;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-right p {
+    margin: 10px 0;
+}
+
+.footer-right .material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #d5a848;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Opcjonalny separator */
+    margin-top: 20px;
+    font-size: 1.5vh;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .social-icon {
+        margin-right: 15px;
+        font-size: 30px;
+    }
 }
