@@ -37,6 +37,7 @@ form button {
     font-size: 16px;
     cursor: pointer;
     font-family: "Roboto Slab", serif;
+    border: 1px solid var(--accent-color);
     transition: background-color 0.3s;
 }
 
@@ -44,6 +45,7 @@ form button:hover {
     background-color: var(--primary-color); /* Kolor tła przycisku po najechaniu */
     color: var(--accent-color);
     opacity: 0.9;
+    border: 1px solid var(--accent-color);
 }
 
 
