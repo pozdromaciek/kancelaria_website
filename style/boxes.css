@@ -9,7 +9,7 @@
 
 
 .accordion-box {
-    width: 100%; /* Boxy będą zajmowały 100% szerokości kontenera */
+    /*width: 100%; /* Boxy będą zajmowały 100% szerokości kontenera */
     border: 1px solid var(--accent-color);
     padding: 15px;
     /* box-shadow: 0 2px 4px var(--shadow-color); */
