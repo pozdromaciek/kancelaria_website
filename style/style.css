@@ -33,8 +33,8 @@
     }
 } */ 
 :root {
-    --primary-color: rgb(255, 253, 231);
-    --primary-transparent-color: rgba(255, 253, 231, 0.9);
+    --primary-color: rgb(247, 250, 252);
+    --primary-transparent-color: rgba(247, 250, 252, 0.9);
     --background-transparent-color: rgba(255, 255, 255, 0.7);
     --seconadry-color: #1A1A1A;
     --text-light-color: #1A1A1A;
