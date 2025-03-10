@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST["message"]);
     $form_subject = htmlspecialchars($_POST["subject"]);
 
-    $to = "twoj@email.com";  // Podmień na swój adres e-mail
+    $to = "kancelaria@adwokatszczepanska.pl";  // Podmień na swój adres e-mail
     $subject = "Formularz kontaktowy: $form_subject";
     $body = "Done kontaktowe:\n
     Imię i nazwisko: $name\n
